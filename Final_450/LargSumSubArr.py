@@ -1,11 +1,11 @@
-arr= [1,2,4,-1,9]
+arr = [-1,-2,4,5,-6]
 n = len(arr)
-sum = 0
-maxi = arr[0]
-for i in range (n):
-    sum = sum + arr[i]
-    if(sum > maxi):
+sum = 0 
+maxi = 0
+for i in range(n):
+    sum += arr[i]
+    if(sum < arr[i]):
+        sum = arr[i]
+    if(sum > maxi ):
         maxi = sum
-    if( sum < 0):
-        maxi = 0
-print(maxi)
+print("result : ",maxi)
