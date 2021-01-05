@@ -21,4 +21,8 @@ hset.discard("world")
 
 print(hset)
 
+# pop() clear del also used
 
+# to join 
+# set1.update(set2)
+# set1.union(set2)
